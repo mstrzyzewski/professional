@@ -71,14 +71,20 @@
     },
     "minimum-stability": "stable",
     "prefer-stable": true,
-    "repositories": [
-        {
+    "repositories": {
+        "training-pro-dev": {
+            "type": "path",
+            "url": "training-modules/project-professional-developer/src/*",
+            "options": {
+                "symlink": true
+            }
+        },
+        "0": {
             "type": "composer",
             "url": "https://repo.magento.com/"
         }
-    ],
+    },
     "extra": {
         "magento-force": "override"
     }
 }
-
